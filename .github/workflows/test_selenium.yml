@@ -25,9 +25,7 @@ jobs:
       - 
         name: Install Package
         run: |
-          pip install get-chrome-driver --upgrade
-          pip install -r selenium/requirements.txt
-          python selenium/main.py
+          pip install -r requirements.txt
       - 
         name: Test Selenium
         run: python test_selenium.py
