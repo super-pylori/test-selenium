@@ -1,7 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-import chromedriver_binary
 from webdriver_manager.chrome import ChromeDriverManager
+#from get_chrome_driver import GetChromeDriver
+
+# get_driver = GetChromeDriver()
+# get_driver.install()
 
 op = Options()
 # ヘッドレスモード（Linux上で動かすとき必ずこのモードにしておく）
