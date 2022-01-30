@@ -166,8 +166,6 @@ backnumbersA_df = pd.DataFrame(backnumbersA)
 with pd.option_context('display.max_rows', None, 'display.max_columns', None):  # more options can be specified also
     print(backnumbersA_df)
 
-exit()
-
 tableB_links = get_tableB_links()
 backnumbersB = get_data_from_tableB(tableB_links)
 backnumbersB_df = pd.DataFrame(backnumbersB)

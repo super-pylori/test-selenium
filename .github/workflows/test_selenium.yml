@@ -23,3 +23,10 @@ jobs:
       - 
         name: Test Selenium
         run: python test_selenium.py
+      - name: Commit files
+        run: |
+          git config --local user.email "super.pylori6@gmail.com"
+          git config --local user.name "super-pylori"
+          git add .
+          git commit -m "Update numbers3.csv" -a
+          git push origin master
