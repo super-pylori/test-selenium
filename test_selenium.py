@@ -1,10 +1,6 @@
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
 from webdriver_manager.chrome import ChromeDriverManager
-#from get_chrome_driver import GetChromeDriver
-
-# get_driver = GetChromeDriver()
-# get_driver.install()
 
 op = Options()
 # ヘッドレスモード（Linux上で動かすとき必ずこのモードにしておく）
@@ -27,7 +23,6 @@ op.add_experimental_option('excludeSwitches', ['enable-logging'])
 op.add_experimental_option('useAutomationExtension', False)
 # op.add_experimental_option("detach", True) # ブラウザ出るモードの時処理終了後もブラウザを閉じない
 op.page_load_strategy = 'eager'
-#driver = webdriver.Chrome(options=op)
 driver = webdriver.Chrome(ChromeDriverManager().install(),options=op)
 driver.get('https://example.com')
 print(driver.current_url)
